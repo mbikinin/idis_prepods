@@ -28,7 +28,7 @@
 
 	<xsl:template match="getAbbiture/item">
 		<xsl:choose>
-			<xsl:when test="status = 'Рекомендован' ">
+			<xsl:when test="status = 'Рекомендован' or status = 'Зачислен'">
 				<tr class="in_budget"><td class="col"></td>
 					<td><xsl:value-of select = "familyname" /></td>
 					<td><xsl:value-of select = "firstname" /></td>
